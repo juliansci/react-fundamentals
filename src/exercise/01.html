@@ -16,6 +16,13 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
 <html>
   <body>
-    <div id="root"></div>
+    <script>
+      const rootElement = document.createElement('div')
+      rootElement.id = 'root'
+      const div = document.createElement('div')
+      div.textContent = 'Hello World'
+      rootElement.append(div)
+      document.body.append(rootElgiement)
+    </script>
   </body>
 </html>
